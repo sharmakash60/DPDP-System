@@ -439,7 +439,7 @@ Frontend and backend services can be deployed independently for scalable infrast
 
 ## Kash Sharma
 
-Machine Learning & Data Science Engineer focused on:
+Machine Learning Engineer & Data Analyst focused on:
 
 - AI Systems
 - MLOps
