@@ -1,0 +1,29 @@
+.signup-container {
+  max-width: 800px;
+  padding: 80px 24px;
+}
+.form-header { margin-bottom: 40px; }
+.form-header h1 { font-size: 32px; color: #0f3f4c; margin-bottom: 12px; font-weight: 800; }
+.form-header p { color: #334155; font-size: 15px; }
+
+.reach-out-form { display: flex; flex-direction: column; gap: 24px; }
+.form-row { display: flex; flex-direction: column; gap: 24px; }
+@media (min-width: 600px) { .form-row { flex-direction: row; } .input-group { flex: 1; } }
+
+.input-group label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 8px; color: #1e293b; }
+.req { color: #ef4444; margin-left: 2px; }
+.input-group input, .phone-input { width: 100%; height: 48px; border: 1px solid var(--border-light); border-radius: 24px; padding: 0 20px; font-size: 15px; background: #f8fafc; outline: none; transition: 0.2s; }
+.input-group input:focus { border-color: var(--brand-green); background: white; }
+
+.phone-input { display: flex; padding: 0; overflow: hidden; }
+.country-code { background: transparent; border: none; padding: 0 16px; border-right: 1px solid var(--border-light); font-size: 14px; color: #475569; outline: none; }
+.phone-input input { border: none; border-radius: 0; background: transparent; height: 100%; }
+
+.form-footer { margin-top: 40px; display: flex; flex-direction: column; align-items: flex-end; gap: 20px; }
+.progress-indicator { width: 100%; }
+.step-text { font-size: 14px; font-weight: 600; color: #0f3f4c; display: block; margin-bottom: 8px; }
+.progress-bar { height: 8px; background: #e2e8f0; border-radius: 4px; width: 100%; overflow: hidden; }
+.progress-fill { height: 100%; background: #0f3f4c; border-radius: 4px; }
+
+.btn-next { background: #0f3f4c; color: white; padding: 12px 40px; border-radius: 99px; border: none; font-weight: 600; cursor: pointer; transition: 0.2s; }
+.btn-next:hover { background: #000; }

@@ -1,0 +1,87 @@
+.text-green { color: var(--brand-green); }
+.home-wrapper { display: flex; flex-direction: column; }
+
+/* Hero */
+.hero-section { display: flex; flex-direction: column; gap: 40px; padding: 80px 24px; align-items: center; }
+@media (min-width: 900px) { .hero-section { flex-direction: row; padding: 120px 24px; justify-content: space-between; } }
+.hero-content { flex: 1; }
+.hero-content h1 { font-size: clamp(32px, 4vw, 48px); font-weight: 800; line-height: 1.2; margin-bottom: 24px; }
+.hero-content p { font-size: 16px; color: var(--text-muted); margin-bottom: 32px; max-width: 500px; line-height: 1.6; }
+.btn-primary { background: var(--brand-green); color: white; border: none; padding: 14px 32px; border-radius: 99px; font-weight: 700; cursor: pointer; transition: 0.2s; }
+.btn-primary:hover { background: var(--brand-green-hover); transform: translateY(-2px); }
+
+/* Accordion */
+.hero-accordion { flex: 1; width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 16px; }
+.accordion-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); cursor: pointer; border: 1px solid var(--border-light); transition: 0.3s; overflow: hidden; }
+.accordion-card:hover { box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
+.accordion-card.active { border-color: var(--brand-green); }
+.accordion-header { padding: 20px 24px; display: flex; align-items: center; gap: 16px; }
+.accordion-title { font-weight: 600; font-size: 16px; }
+.accordion-body { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: var(--text-muted); font-size: 14px; }
+.accordion-card.active .accordion-body { padding-bottom: 20px; max-height: 200px; }
+
+/* Stats */
+.stats-section { background: linear-gradient(180deg, #1A202C 0%, #2D3748 100%); padding: 80px 0; color: white; }
+.stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; text-align: center; }
+@media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(4, 1fr); } }
+.stat-box h2 { color: var(--brand-green); font-size: 48px; font-weight: 800; margin-bottom: 8px; }
+.stat-box p { font-size: 14px; opacity: 0.9; }
+
+/* Testimonials - Now a grid */
+.testimonial-section { padding: 100px 24px; text-align: center; }
+.section-title { font-size: 40px; font-weight: 800; margin-bottom: 16px; }
+.section-subtitle { color: var(--text-muted); max-width: 700px; margin: 0 auto 40px; font-size: 16px; }
+.testimonials-grid { display: grid; grid-template-columns: 1fr; gap: 24px; max-width: 1100px; margin: 0 auto; }
+@media (min-width: 768px) { .testimonials-grid { grid-template-columns: repeat(3, 1fr); } }
+.testimonial-card { background: white; border: 1px solid var(--border-light); border-radius: 20px; padding: 32px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between; }
+.quote { font-size: 15px; line-height: 1.7; margin-bottom: 24px; color: var(--brand-dark); font-style: italic; }
+.author strong { display: block; font-size: 16px; margin-bottom: 2px; }
+.author span { color: var(--text-muted); font-size: 13px; }
+
+/* FAQ */
+.faq-section { background-color: var(--brand-light); padding-bottom: 60px; }
+.faq-banner { background: black; color: white; text-align: center; padding: 40px 20px; }
+.faq-banner h2 { font-size: 32px; font-weight: 700; }
+.faq-content { padding: 60px 24px; text-align: center; }
+.faq-title { font-size: 36px; margin-bottom: 40px; font-weight: 800;}
+.faq-grid { display: grid; grid-template-columns: 1fr; gap: 16px; max-width: 900px; margin: 0 auto; text-align: left; }
+@media (min-width: 768px) { .faq-grid { grid-template-columns: 1fr 1fr; } }
+
+/* Reach Out Form */
+.reach-out-section { max-width: 800px; padding: 80px 24px; margin: 0 auto; }
+.form-header { margin-bottom: 40px; text-align: left; }
+.form-header h2 { font-size: 36px; color: #0f3f4c; margin-bottom: 12px; font-weight: 800; }
+.form-header p { color: var(--text-muted); font-size: 16px; }
+
+.reach-out-form { display: flex; flex-direction: column; gap: 24px; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.04); border: 1px solid var(--border-light); }
+.form-row { display: flex; flex-direction: column; gap: 24px; }
+@media (min-width: 600px) { .form-row { flex-direction: row; } .input-group { flex: 1; } }
+
+.input-group label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #1e293b; }
+.req { color: #ef4444; margin-left: 2px; }
+.input-group input, .phone-input { width: 100%; height: 48px; border: 1px solid var(--border-light); border-radius: 12px; padding: 0 16px; font-size: 15px; background: #f8fafc; outline: none; transition: 0.2s; font-family: inherit;}
+.input-group input:focus, .phone-input:focus-within { border-color: var(--brand-green); background: white; box-shadow: 0 0 0 3px rgba(85,179,133,0.1); }
+
+.phone-input { display: flex; padding: 0; overflow: hidden; align-items: center; }
+.country-code { background: transparent; border: none; padding: 0 12px; border-right: 1px solid var(--border-light); font-size: 14px; color: #475569; outline: none; height: 100%; cursor: pointer;}
+.phone-input input { border: none; border-radius: 0; background: transparent; height: 100%; flex: 1; box-shadow: none !important;}
+
+.form-submit-row { display: flex; justify-content: flex-end; margin-top: 10px; }
+.btn-dark-large { background: #0f3f4c; color: white; padding: 14px 40px; border-radius: 12px; border: none; font-weight: 600; font-size: 16px; cursor: pointer; transition: 0.2s; }
+.btn-dark-large:hover { background: #000; transform: translateY(-2px); }
+/* Update these sections in your existing Home.css to guarantee smooth slide-down actions */
+.accordion-body { 
+  padding: 0 24px; 
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease; 
+  color: var(--text-muted); 
+  font-size: 14.5px; 
+  line-height: 1.6;
+}
+
+.accordion-card.active .accordion-body { 
+  padding-bottom: 20px; 
+  max-height: 500px; /* Elevated bounds to allow comprehensive multi-line text boxes */
+  transition: max-height 0.3s cubic-bezier(0.9, 0, 0.1, 1), padding 0.3s ease;
+}

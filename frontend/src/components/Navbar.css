@@ -1,0 +1,46 @@
+.navbar {
+  border-bottom: 1px solid var(--border-light);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.logo { display: flex; align-items: center; gap: 8px; font-size: 24px; font-weight: 700; }
+.nav-links { display: none; gap: 32px; font-size: 15px; font-weight: 500; color: var(--brand-dark); }
+.nav-item { display: flex; align-items: center; gap: 4px; cursor: pointer; transition: color 0.2s; }
+.nav-item:hover { color: var(--brand-green); }
+.nav-actions { display: flex; align-items: center; gap: 20px; }
+.btn-dark { background: var(--brand-dark); color: white; padding: 10px 24px; border-radius: 99px; font-weight: 600; font-size: 14px; transition: background 0.2s; }
+.btn-dark:hover { background: #000; }
+
+@media (min-width: 768px) {
+  .nav-links { display: flex; }
+}
+/* Add to the bottom of Navbar.css */
+.active-link { color: var(--brand-green) !important; font-weight: 700; background: rgba(85, 179, 133, 0.1); padding: 8px 16px; border-radius: 8px; }
+.user-profile-icon { background: var(--brand-dark); color: white; padding: 8px 16px; border-radius: 99px; font-weight: 600; font-size: 14px; cursor: pointer; }
+
+/* Add to Navbar.css */
+.btn-icon-premium {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-dark);
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.btn-icon-premium:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}

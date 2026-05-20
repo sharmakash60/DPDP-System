@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --brand-green: #55B385;
+  --brand-green-hover: #459a70;
+  --brand-light: #F4F9F6; /* Soft green-gray background from your screenshots */
+  --brand-dark: #1A202C;
+  --text-muted: #718096;
+  --border-light: #E2E8F0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--brand-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+}
+
+a { text-decoration: none; color: inherit; }
+li { list-style: none; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main { flex: 1; }

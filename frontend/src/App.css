@@ -1,0 +1,19 @@
+/* src/App.css */
+:root {
+  --brand-green: #55B385;
+  --brand-light: #F8FAFB;
+  --brand-dark: #2D3748;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--brand-light);
+  color: var(--brand-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
