@@ -1,98 +1,178 @@
-# 🔐 DPDP + SOC2 Compliance Scanner with ML Anomaly Detection
+# 🔐 DPDP-SOC2 Intelligence Platform
+### AI-Powered Compliance Monitoring & Threat Analytics System
 
-A production-style compliance and security analytics platform built using Python, Streamlit, Machine Learning, and rule-based scanning.
+A production-grade compliance intelligence platform engineered using **FastAPI**, **React**, and **Machine Learning** to automate regulatory auditing, infrastructure threat detection, and anomaly-based security analysis across enterprise environments.
 
-This project scans configuration files, logs, source code, and system artifacts for compliance violations related to:
-
-- DPDP (Digital Personal Data Protection Act)
-- SOC2 Security Controls
-- Sensitive Data Exposure
-- Access Control Issues
-- Weak Encryption
-- Monitoring & Incident Gaps
-- Data Retention Risks
-- Third-Party Transfer Risks
-
-The system combines:
-
-✅ Rule-Based Detection
-
-✅ ML-Based Anomaly Detection
-
-✅ Risk Scoring Engine
-
-✅ Interactive Dashboard
-
-✅ Downloadable JSON Reports
+The platform performs intelligent inspection of infrastructure datasets and operational logs against **DPDP** and **SOC2** compliance standards while leveraging machine learning models to identify suspicious activity patterns, abnormal access behavior, and high-risk operational vectors.
 
 ---
 
-# 🚀 Features
+# 📌 Overview
 
-## 🔎 Compliance Scanning
+Traditional compliance operations depend heavily on:
 
-Scans:
+- Manual auditing
+- Static spreadsheets
+- Delayed reporting
+- Fragmented monitoring systems
+- Reactive security workflows
 
-- Configuration files
-- Application logs
-- Database logs
-- Environment files
-- Source code
-- Text files
+This platform introduces a centralized AI-driven compliance architecture capable of:
 
-Detects:
-
-- Emails
-- Aadhaar numbers
-- PAN numbers
-- Weak cryptography
-- Plaintext secrets
-- HTTP usage
-- Missing consent mechanisms
-- Missing access control
-- Missing audit logs
-- Retention policy issues
-- Vendor security gaps
+- Parsing structured and unstructured datasets
+- Detecting anomalous system behavior
+- Generating real-time compliance risk scores
+- Visualizing infrastructure risk metrics
+- Exporting machine-readable audit intelligence
+- Delivering enterprise-style security analytics
 
 ---
 
-## 🧠 Machine Learning Integration
+# 🧠 Core Architecture
 
-Uses Isolation Forest anomaly detection to:
-
-- Detect suspicious findings
-- Identify abnormal compliance patterns
-- Generate risk scores
-- Highlight high-risk violations
+```text
+┌─────────────────────────────┐
+│        React Frontend       │
+│  Security Analytics Layer   │
+└──────────────┬──────────────┘
+               │ REST API
+               ▼
+┌─────────────────────────────┐
+│       FastAPI Backend       │
+│ Parsing + ML Inference API  │
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│  ML Threat Detection Engine │
+│ Random Forest Classification│
+└──────────────┬──────────────┘
+               │
+               ▼
+┌─────────────────────────────┐
+│ Compliance Risk Engine      │
+│ DPDP + SOC2 Evaluation      │
+└─────────────────────────────┘
+```
 
 ---
 
-## 📊 Interactive Dashboard
+# 🚀 Platform Capabilities
 
-Built using Streamlit.
+## ✅ Compliance Intelligence
 
-Includes:
+The engine evaluates uploaded infrastructure artifacts against multiple operational and governance dimensions including:
 
-- Rule scan metrics
-- ML risk analysis
+- DPDP regulatory indicators
+- SOC2 security controls
+- Infrastructure attack signatures
+- Unauthorized access behavior
+- Sensitive data exposure
+- Threat activity patterns
+- Weak security configurations
+- Operational anomaly vectors
+
+---
+
+# 🤖 Machine Learning Threat Detection
+
+The backend dynamically performs behavioral classification using:
+
+```python
+RandomForestClassifier()
+```
+
+to detect suspicious activity across uploaded infrastructure datasets.
+
+### Detection Pipeline Includes
+
+- Semantic threat keyword analysis
+- Dynamic feature extraction
+- Heuristic behavioral evaluation
+- Numerical anomaly thresholding
+- Vectorized security scoring
+- Threat prioritization logic
+
+---
+
+# 📊 Interactive Security Analytics Dashboard
+
+The React frontend delivers enterprise-style operational analytics including:
+
+## Security Metrics
+
+- Compliance integrity scoring
+- Threat density analysis
+- Infrastructure scan statistics
+- Real-time risk tracking
+
+## Visualization Systems
+
 - Severity distribution charts
-- Risk score visualization
-- Framework distribution pie charts
-- High-risk findings table
-- Downloadable reports
+- Risk progression analytics
+- Threat cluster mapping
+- Anomalous execution analysis
+- Infrastructure risk allocation
+
+## Operational Features
+
+- Secure authentication UI
+- Real-time dataset uploads
+- JSON report exporting
+- Interactive remediation visibility
+- Responsive dashboard architecture
 
 ---
 
-# 🛠️ Tech Stack
+# ⚡ Backend Infrastructure
 
-| Technology | Purpose |
+The FastAPI backend provides high-performance REST APIs for:
+
+- File ingestion
+- Dataset parsing
+- ML inference
+- Compliance analysis
+- Threat classification
+- Risk aggregation
+- Report generation
+
+---
+
+# 🔌 API Endpoint
+
+## Upload & Analyze Dataset
+
+```http
+POST /api/upload
+```
+
+---
+
+# 📥 Supported Dataset Formats
+
+```text
+.log
+.csv
+.json
+.db
+```
+
+---
+
+# 🛠️ Technology Stack
+
+| Layer | Technology |
 |---|---|
-| Python | Backend logic |
-| Streamlit | Dashboard UI |
-| Pandas | Data processing |
-| Scikit-learn | ML anomaly detection |
-| Matplotlib | Visualizations |
-| Git & GitHub | Version control |
+| Frontend | React + Vite |
+| Backend | FastAPI |
+| Machine Learning | Scikit-learn |
+| Data Processing | Pandas |
+| Numerical Computing | NumPy |
+| Visualization | Recharts |
+| API Communication | Axios |
+| ML Algorithm | Random Forest |
+| Styling | CSS3 |
+| Version Control | Git & GitHub |
 
 ---
 
@@ -101,43 +181,69 @@ Includes:
 ```bash
 DPDP-System/
 │
-├── main.py
-├── rules.py
-├── ml_model.py
-├── compliance_rules_v2.txt
+├── api.py
 ├── requirements.txt
-├── .gitignore
-├── real_data/
-│   ├── app.log
-│   ├── access.log
-│   ├── config.env
+├── config_data.csv
+├── log_data.csv
+├── README.md
 │
-└── README.md
+├── frontend/
+│   │
+│   ├── public/
+│   │
+│   ├── src/
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   └── Signup.jsx
+│   │   │
+│   │   ├── components/
+│   │   ├── assets/
+│   │   └── styles/
+│   │
+│   ├── package.json
+│   ├── vite.config.js
+│   ├── eslint.config.js
+│   └── index.html
+│
+└── .gitignore
 ```
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Local Development Setup
 
-## 1️⃣ Clone Repository
+---
+
+# 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/sharmakash60/DPDP-System.git
 ```
 
-## 2️⃣ Move Into Project
+---
+
+# 2️⃣ Navigate Into Project
 
 ```bash
 cd DPDP-System
 ```
 
-## 3️⃣ Create Virtual Environment
+---
+
+# ⚡ Backend Setup (FastAPI)
+
+## Create Virtual Environment
 
 ```bash
 python -m venv .venvv
 ```
 
-## 4️⃣ Activate Environment
+---
+
+## Activate Environment
 
 ### Windows
 
@@ -145,7 +251,7 @@ python -m venv .venvv
 .venvv\Scripts\activate
 ```
 
-### Linux / Mac
+### Linux / macOS
 
 ```bash
 source .venvv/bin/activate
@@ -153,7 +259,7 @@ source .venvv/bin/activate
 
 ---
 
-# 📦 Install Dependencies
+## Install Backend Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -161,108 +267,110 @@ pip install -r requirements.txt
 
 ---
 
-# ▶️ Run the Application
-
-## Generate Rules
+## Run FastAPI Backend
 
 ```bash
-python rules.py generate
+uvicorn api:app --reload
 ```
 
-## Start Dashboard
-
-```bash
-streamlit run main.py
-```
-
----
-
-# 📥 Input Data
-
-Place your configuration and log files inside:
-
-```bash
-real_data/
-```
-
-Example:
-
-```bash
-real_data/
-├── app.log
-├── access.log
-├── db_config.env
-```
-
-Then use:
+Backend Server:
 
 ```text
-real_data
+http://127.0.0.1:8000
 ```
 
-inside the dashboard Target Path.
+Swagger API Documentation:
 
----
-
-# 🧠 ML Risk Scoring
-
-The ML engine converts findings into numerical features and applies:
-
-```python
-IsolationForest()
+```text
+http://127.0.0.1:8000/docs
 ```
 
-Risk scores are generated based on:
+---
 
-- Severity
-- Category
-- Framework
-- Anomaly behavior
+# ⚛️ Frontend Setup (React + Vite)
+
+## Navigate Into Frontend
+
+```bash
+cd frontend
+```
 
 ---
 
-# 📊 Dashboard Analytics
+## Install Frontend Dependencies
 
-The dashboard includes:
-
-- Severity Distribution
-- Framework Distribution
-- Risk Score Distribution
-- High Risk Detection
-- ML Risk Analysis
+```bash
+npm install
+```
 
 ---
 
-# 🔐 Compliance Frameworks
+## Start Frontend Development Server
 
-## DPDP
+```bash
+npm run dev
+```
 
-Includes controls for:
+Frontend URL:
 
-- Consent Management
-- Data Retention
-- Encryption
-- User Rights
-- Monitoring
-- Incident Response
-- Third-Party Transfers
-
-## SOC2
-
-Includes controls for:
-
-- Security Governance
-- Logging & Monitoring
-- Availability & Recovery
-- Confidentiality
-- Change Management
-- Infrastructure Security
+```text
+http://localhost:5173
+```
 
 ---
 
-# 📤 Report Export
+# 🧠 Threat Intelligence Pipeline
 
-The application generates downloadable:
+```text
+Dataset Upload
+      ↓
+Hybrid Parsing Engine
+      ↓
+Dynamic Feature Extraction
+      ↓
+Semantic Threat Analysis
+      ↓
+Random Forest Classification
+      ↓
+Risk Probability Generation
+      ↓
+Compliance Visualization
+```
+
+---
+
+# 🔐 Supported Compliance Domains
+
+## DPDP (Digital Personal Data Protection)
+
+Coverage includes:
+
+- Consent handling
+- Data retention monitoring
+- Security governance
+- User privacy analysis
+- Data exposure detection
+- Access monitoring
+- Incident visibility
+
+---
+
+## SOC2 Security Controls
+
+Coverage includes:
+
+- Infrastructure security
+- Monitoring & logging
+- Access governance
+- Threat management
+- Security event tracking
+- Operational integrity
+
+---
+
+# 📤 Exportable Reporting
+
+The platform generates downloadable machine-readable reports:
 
 ```bash
 report.json
@@ -270,56 +378,63 @@ report.json
 
 containing:
 
-- Findings
-- Risk Scores
-- Severity
-- Framework
-- Categories
+- Threat vectors
+- ML classifications
+- Risk probabilities
+- Security findings
+- Compliance intelligence
+- Operational metrics
 
 ---
 
-# 🚀 Future Improvements
+# 🔌 API Example
 
-- Real-time log streaming
-- Kafka integration
-- User authentication
-- Cloud deployment
-- Role-based access control
-- Threat intelligence integration
-- Database-backed rules engine
-- Live alerts and notifications
-- Advanced ML models
-- Time-series anomaly detection
+## Upload Dataset
 
----
-
-# 📸 Screenshots
-
-Add screenshots here after uploading images to GitHub.
-
-Example:
-
-```md
-![Dashboard](screenshots/dashboard.png)
+```bash
+curl -X POST "http://127.0.0.1:8000/api/upload" \
+-F "file=@log_data.csv"
 ```
 
 ---
 
-# 🧪 Example Test Data
+# ☁️ Deployment Ready
 
-Example log entry:
+The platform architecture supports deployment on:
 
-```text
-user email = test@gmail.com
-password_plaintext = 12345
-http://unsafe-api.com
+- Docker
+- Render
+- Railway
+- Vercel
+- Netlify
+- AWS
+- Azure
+- Google Cloud Platform
+
+Frontend and backend services can be deployed independently for scalable infrastructure management.
+
+---
+
+# 🚀 Future Roadmap
+
+## Planned Enterprise Enhancements
+
+- JWT Authentication
+- Role-Based Access Control
+- PostgreSQL Integration
+- Kafka Event Streaming
+- Dockerized Infrastructure
+- SIEM Integrations
+- Cloud-native Deployment
+- CI/CD Automation
+- Real-time Threat Feeds
+- Advanced Deep Learning Models
+- Distributed ML Pipelines
+
+---
+
+
 ```
-
-The system detects:
-
-- Email exposure
-- Plaintext secrets
-- Insecure HTTP usage
 
 ---
 
@@ -327,34 +442,31 @@ The system detects:
 
 ## Kash Sharma
 
-Data Science Graduate focused on:
+Machine Learning & Data Science Engineer focused on:
 
-- Machine Learning
-- Data Analytics
+- AI Systems
 - MLOps
 - Security Analytics
 - Compliance Engineering
+- Intelligent Monitoring Systems
+- Enterprise ML Infrastructure
 
 ---
 
-# ⭐ Project Highlights
+# ⭐ Engineering Highlights
 
-✅ 400 Compliance Rules
-
-✅ DPDP + SOC2 Support
-
-✅ ML-Based Detection
-
-✅ Streamlit Dashboard
-
-✅ JSON Reporting
-
-✅ Risk Scoring System
-
-✅ Real-World Architecture
+✅ React + FastAPI Enterprise Architecture  
+✅ ML-Powered Threat Detection  
+✅ Random Forest Behavioral Analysis  
+✅ Real-Time Compliance Analytics  
+✅ DPDP + SOC2 Intelligence Mapping  
+✅ Interactive Security Dashboard  
+✅ Production-Style API Infrastructure  
+✅ JSON Threat Intelligence Reporting  
+✅ Responsive Modern UI System  
 
 ---
 
 # 📄 License
 
-This project is intended for educational and research purposes.
+This project is intended for research, and portfolio demonstration purposes.
