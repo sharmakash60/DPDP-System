@@ -433,9 +433,6 @@ Frontend and backend services can be deployed independently for scalable infrast
 
 ---
 
-
-```
-
 ---
 
 # 👨‍💻 Author
